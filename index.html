@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.svg" alt="logo">
+    </header>
+
+    <main class="main">
+        <div class="search-box">
+            <div class="search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+
+                <input id="search-input" type="text" placeholder="Поиск фильмов по жанрам и актерам">
+            </div>
+            <div class="search_active_results" id="search-results">
+            </div>
+        </div>
+
+        <div class="results">
+            <h3 id="result-count"></h3>
+            <div class="container" id="movie-list">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&nbsp2019 Тинькофф Прокат</p>
+    </footer>
+
+</body>
+
+<script src="./movie.js"></script>
+<script src="./history.js"></script>
+<script src="./index.js"></script>
+
+</html>
