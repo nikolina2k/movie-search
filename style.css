@@ -1,0 +1,248 @@
+body {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    width: 1280px;
+    margin: auto;
+    margin-bottom: 100px;
+    min-height: 720px;
+}
+
+footer {
+    color: #FFFFFF66;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p:before {
+    content: '\00A9';
+}
+
+header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.search-box > .search > input {
+    width: 628px;
+    outline: none;
+    background: none;
+    border: none;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    font-size: 24px;
+    position: relative;
+}
+
+.search-box > .search {
+    grid-area: a;
+    justify-self: center;
+}
+
+.search-box > .search > i {
+    color: white;
+    position: absolute;
+    font-size: 28px;
+    padding-top: 18px;
+    padding-left: 70px;
+}
+
+.search-box > div:hover {
+    cursor: pointer;
+
+}
+
+.results > h3 {
+    color: white;
+    font-size: 36px;
+    text-align: start;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 24px;
+}
+
+.container > div {
+    background: grey;
+    width: 302px;
+    height: 454px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.container > div > div.info {
+    position: absolute;
+    color: black;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.43%, rgba(0, 0, 0, 0.8) 72.41%);
+    backdrop-filter: blur(1px);
+}
+
+.container > div > img {
+    height: 100%;
+    width: 100%;
+}
+
+.container > div:hover > div.info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.div_with_title {
+    color: white;
+    text-align: start;
+}
+
+.title, .subtitle {
+    opacity: 24%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info:hover > .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    color: white;
+    opacity: 100%;
+}
+
+.info:hover > .subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    color: white;
+    opacity: 100%;
+}
+
+.empty_title {
+    background-color: white;
+    opacity: 8%;
+    width: 246px;
+    height: 24px;
+    margin: 20px;
+}
+
+.empty_subtitle {
+    background-color: white;
+    opacity: 8%;
+    width: 156px;
+    height: 24px;
+    margin: 20px;
+}
+
+.search_active .search-box > .search > input {
+    border-color: #FDCE25;
+    width: 1280px;
+    text-align: start;
+    padding-left: 50px;
+}
+
+.search_active .search-box > .search > i {
+    padding-left: 0px;
+}
+
+
+.search_live .results {
+    display: block;
+}
+
+.search_active_results {
+    display: flex;
+    gap: 10px;
+    width: 1280px;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.results > div:hover {
+    cursor: pointer;
+}
+
+.search_active_results > div {
+    background-color: white;
+    opacity: 80%;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
+    min-width: max-content;
+}
+
+.search_active_results > div:hover {
+    opacity: 100%;
+}
+
+.search_active .search_active_results > .history {
+    visibility: visible;
+}
+
+.no-results {
+    display: none;
+}
+
+.no-results > p {
+    color: white;
+    font-size: 36px;
+    text-align: start;
+}
+
+.search_not_found .no-results {
+    display: block;
+}
+
+.more-history {
+    visibility: hidden;
+}
+
+.search_more_history .more-history {
+    visibility: visible;
+}
+
+.search {
+    width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.empty_div, .div_with_title {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#error-block {
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    justify-self: center;
+    position: absolute;
+}
+
+#preloader {
+    width: 10%;
+    justify-self: center;
+    position: absolute;
+}
+
