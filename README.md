@@ -4,7 +4,7 @@ This repository contains a project which is a simple movie search website. The m
 
 ## Technologies Used
 
-- JavaScript: Used for implementing interactions and managing different states.
+- Vanilla JavaScript: Used for implementing interactions and managing different states.
 
 - HTML: Used for structuring the web page content.
 
